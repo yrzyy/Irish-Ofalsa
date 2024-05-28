@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Montserrat, sans-serif;
+        }
+
+        body {
+            background: lightpink;
+        }
+
+        .container {
+            background: maroon;
+            max-width: 800px;
+            margin: 60px auto;
+            padding: 20px;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+            color:white;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .img-area {
+            width: 250px;
+            height: 250px;
+            border-radius: 100%;
+            overflow: hidden;
+            border: 20px groove lightpink;
+            margin-right: 20px;
+            flex-shrink: 0;
+        }
+
+        .img-area img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .header h1 {
+            text-transform: uppercase;
+            font-size: 30px;
+            font-weight: 700;
+            font-family: cursive;
+        }
+
+        .main {
+            display: flex;
+        }
+
+        .left, .right {
+            flex: 1;
+            padding: 30px;
+        }
+
+        .center-line {
+            width: 2px;
+            background: white;
+            margin: 0 50px;
+        }
+
+        h2 {
+            background: royalblue;
+            padding: 15px;
+            color: #fff;
+            margin: 30px 0;
+            font-size: 20px;
+            border-radius: 0 50px 50px 0;
+        }
+
+        .left p, .right p, .left ul li, .right ul li {
+            line-height: 2;
+        }
+
+        .right h3 {
+            margin-bottom: 15px;
+        }
+
+        a.icon-link {
+            color: skyblue;
+            text-decoration: none;
+        }
+
+        a.icon-link:hover {
+            color: #007b8c;
+        }
+
+        .icon {
+            margin-left: 10px;
+        }
+
+        .skills {
+            margin-top: 20px;
+        }
+
+        .skill {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 10px 0;
+        }
+
+        .skill .rate {
+            width: 70%;
+            background: #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            height: 10px;
+        }
+
+        .skill .rate div {
+            height: 100%;
+            background: royalblue;
+        }
+
+        @media screen and (max-width: 600px) {
+            .main {
+                flex-direction: column;
+            }
+
+            .left, .right {
+                width: 100%;
+                padding: 15px;
+            }
+
+            .center-line {
+                display: none;
+            }
+
+            h2 {
+                font-size: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="img-area">
+                <img src="/My portfolio in integ/myimage.jpg" alt="Profile Picture">
+            </div>
+            <h1>OFALSA IRISH S.</h1>
+        </div>
+        <div class="main">
+            <div class="left">
+                <h2>Personal Information</h2>
+                <p><strong>Name:</strong> Irish S. Ofalsa</p>
+                <p><strong>Age:</strong> 19</p>
+                <p><strong>Email:</strong> <a class="icon-link" href="mailto:irishofalsa08@gmail.com">irishofalsa08@gmail.com<i class="fa-solid fa-envelope icon"></i></a></p>
+                <p><strong>Phone:</strong> <a class="icon-link" href="tel:09501528513">0950 152 8513<i class="fa-solid fa-phone icon"></i></a></p>
+                <p><strong>Facebook:</strong> <a class="icon-link" href="https://www.facebook.com/irishsadia.ofalsa" target="_blank">Irish Ofalsa<i class="fa-brands fa-facebook icon"></i></a></p>
+                <h2>Skills</h2>
+                <p>I have a knowledge in web development, especially in HTML and CSS for creating responsive and visually appealing websites. I have also a knowledge about JavaScript which I use to enhance website functionality and user experience.</p>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS (Flexbox, Grid)</li>
+                    <li>JavaScript</li>
+                    <li>Photo and Video Editing</li>
+                </ul>
+                <h2>Education</h2>
+                <h3>Jaime G. Espeña High School</h3>
+                <p>2020-2022</p>
+                <h3>Sorsogon State University Bulan Campus</h3>
+                <p>2022-2025</p>
+            </div>
+            <div class="center-line"></div>
+            <div class="right">
+                <h2>About</h2>
+                <ul>
+                    <li>I am dedicated to producing high-quality work, with a keen eye for detail and a commitment to meeting deadlines.</li>
+                    <li>I strive to create user-friendly and visually appealing websites that provide a great user experience.</li>
+                </ul>
+                <h2>Technical Skills</h2>
+                <div class="skills">
+                    <div class="skill">
+                        <span>HTML</span>
+                        <div class="rate"><div style="width: 90%;"></div></div>
+                    </div>
+                    <div class="skill">
+                        <span>CSS</span>
+                        <div class="rate"><div style="width: 85%;"></div></div>
+                    </div>
+                    <div class="skill">
+                        <span>JavaScript</span>
+                        <div class="rate"><div style="width: 75%;"></div></div>
+                    </div
+                    <div class="skill">
+                        <span>Photo Editing</span>
+                        <div class="rate"><div style="width: 60%;"></div></div>
+                    </div>
+                    <div class="skill">
+                        <span>Video Editing</span>
+                        <div class="rate"><div style="width: 60%;"></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
